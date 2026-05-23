@@ -1,0 +1,16 @@
+\begin{table}[H]
+\caption{Correlation Matrix for Stationary Variables}
+\label{tab:corr_matrix}
+\begin{tabular}{ccccccc}
+\hline
+Index & dollar_log_return & vix_diff & STLFSI4_diff & vxy_g7_diff & vxy_em_diff & gepu_diff \\
+\hline
+dollar_log_return & 1.000 & 0.233 & 0.415 & 0.315 & 0.461 & 0.197 \\
+vix_diff & 0.233 & 1.000 & 0.460 & 0.613 & 0.548 & 0.013 \\
+STLFSI4_diff & 0.415 & 0.460 & 1.000 & 0.646 & 0.639 & 0.283 \\
+vxy_g7_diff & 0.315 & 0.613 & 0.646 & 1.000 & 0.771 & 0.197 \\
+vxy_em_diff & 0.461 & 0.548 & 0.639 & 0.771 & 1.000 & 0.188 \\
+gepu_diff & 0.197 & 0.013 & 0.283 & 0.197 & 0.188 & 1.000 \\
+\hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,17 @@
+\begin{table}[H]
+\centering
+\caption{SQ3 Interaction Models}
+\label{tab:sq3_interaction}
+\begin{tabular}{cccccccccccc}
+\hline
+model_name & dependent_variable & explanatory_variables & coefficient_main_proxy & p_value_main_proxy & coefficient_crisis_dummy & p_value_crisis_dummy & coefficient_interaction & p_value_interaction & r_squared & adjusted_r_squared & n_obs \\
+\hline
+ΔVIX × GFC & dollar_log_return & vix_diff + GFC_dummy + vix_diff:GFC_dummy & 0.000 & 0.084 & 0.007 & 0.239 & 0.002 & 0.000 & 0.147 & 0.136 & 239.000 \\
+ΔVIX × COVID & dollar_log_return & vix_diff + COVID_dummy + vix_diff:COVID_dummy & 0.001 & 0.024 & 0.004 & 0.480 & -0.000 & 0.242 & 0.059 & 0.047 & 239.000 \\
+ΔVXY_G7 × GFC & dollar_log_return & vxy_g7_diff + GFC_dummy + vxy_g7_diff:GFC_dummy & 0.003 & 0.007 & 0.006 & 0.369 & 0.003 & 0.067 & 0.124 & 0.113 & 239.000 \\
+ΔVXY_G7 × COVID & dollar_log_return & vxy_g7_diff + COVID_dummy + vxy_g7_diff:COVID_dummy & 0.004 & 0.002 & 0.004 & 0.489 & -0.000 & 0.943 & 0.101 & 0.089 & 239.000 \\
+ΔVXY_EM × GFC & dollar_log_return & vxy_em_diff + GFC_dummy + vxy_em_diff:GFC_dummy & 0.004 & 0.000 & 0.005 & 0.331 & 0.002 & 0.046 & 0.230 & 0.220 & 239.000 \\
+ΔVXY_EM × COVID & dollar_log_return & vxy_em_diff + COVID_dummy + vxy_em_diff:COVID_dummy & 0.004 & 0.000 & -0.000 & 0.992 & 0.003 & 0.122 & 0.215 & 0.205 & 239.000 \\
+\hline
+\end{tabular}
+\end{table}

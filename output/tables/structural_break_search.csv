@@ -1,0 +1,8 @@
+model_name,dependent_variable,independent_variables,best_breakpoint,n_pre,n_post,max_chow_statistic,p_value,break_evidence,interpretation
+dollar_log_return ~ vix_diff,dollar_log_return,vix_diff,2011-10-01,68,171,9.148146183027619,0.00014930899037235575,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_g7_diff,dollar_log_return,vxy_g7_diff,2011-08-01,66,173,3.023961049309496,0.05050393832014434,Weak,Weak evidence of parameter instability
+dollar_log_return ~ vxy_em_diff,dollar_log_return,vxy_em_diff,2011-09-01,67,172,3.1854772036155627,0.043150458421944045,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ STLFSI4_diff,dollar_log_return,STLFSI4_diff,2011-09-01,67,172,3.1158970159306976,0.04617581634223225,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ gepu_diff,dollar_log_return,gepu_diff,2011-05-01,63,175,4.967637332859385,0.00771127745600908,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vix_diff + STLFSI4_diff,dollar_log_return,"vix_diff, STLFSI4_diff",2011-10-01,68,171,3.62169889115532,0.013827671473703312,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_em_diff + STLFSI4_diff,dollar_log_return,"vxy_em_diff, STLFSI4_diff",2011-09-01,67,172,2.801641390416286,0.04066626338621789,Yes,Evidence of parameter instability at the selected regime boundary

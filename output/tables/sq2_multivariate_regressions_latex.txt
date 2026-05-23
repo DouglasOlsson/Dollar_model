@@ -1,0 +1,16 @@
+\begin{table}[H]
+\caption{SQ2 Multivariate Regression Results}
+\label{tab:sq2_multivar}
+\begin{tabular}{cccccccccccccc}
+\hline
+model_name & dependent_variable & explanatory_variables & coefficient_var1 & std_error_var1 & t_stat_var1 & p_value_var1 & coefficient_var2 & std_error_var2 & t_stat_var2 & p_value_var2 & r_squared & adjusted_r_squared & n_obs \\
+\hline
+dollar_log_return ~ vix_diff + STLFSI4_diff & dollar_log_return & vix_diff + STLFSI4_diff & 0.000 & 0.000 & 0.779 & 0.436 & 0.009 & 0.002 & 5.343 & 0.000 & 0.175 & 0.168 & 239.000 \\
+dollar_log_return ~ vix_diff + gepu_diff & dollar_log_return & vix_diff + gepu_diff & 0.001 & 0.000 & 2.574 & 0.010 & 0.000 & 0.000 & 2.649 & 0.008 & 0.092 & 0.084 & 238.000 \\
+dollar_log_return ~ vxy_g7_diff + STLFSI4_diff & dollar_log_return & vxy_g7_diff + STLFSI4_diff & 0.001 & 0.001 & 1.055 & 0.292 & 0.008 & 0.002 & 4.995 & 0.000 & 0.176 & 0.169 & 239.000 \\
+dollar_log_return ~ vxy_g7_diff + gepu_diff & dollar_log_return & vxy_g7_diff + gepu_diff & 0.003 & 0.001 & 2.987 & 0.003 & 0.000 & 0.000 & 2.027 & 0.043 & 0.118 & 0.111 & 238.000 \\
+dollar_log_return ~ vxy_em_diff + STLFSI4_diff & dollar_log_return & vxy_em_diff + STLFSI4_diff & 0.003 & 0.001 & 3.847 & 0.000 & 0.005 & 0.002 & 2.416 & 0.016 & 0.237 & 0.231 & 239.000 \\
+dollar_log_return ~ vxy_em_diff + gepu_diff & dollar_log_return & vxy_em_diff + gepu_diff & 0.004 & 0.001 & 5.782 & 0.000 & 0.000 & 0.000 & 1.892 & 0.059 & 0.227 & 0.220 & 238.000 \\
+\hline
+\end{tabular}
+\end{table}

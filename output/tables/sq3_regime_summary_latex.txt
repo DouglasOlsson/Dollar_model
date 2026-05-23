@@ -1,0 +1,14 @@
+\begin{table}[H]
+\centering
+\caption{SQ3 Regime Summary}
+\label{tab:sq3_summary}
+\begin{tabular}{ccccc}
+\hline
+proxy & interaction_significant & strongest_subperiods & crisis_regime_evidence & conclusion \\
+\hline
+vix_diff & yes & GFC; Pre-GFC & yes & supports regime dependence \\
+vxy_g7_diff & no & GFC; Post-GFC / pre-COVID & yes & mixed evidence \\
+vxy_em_diff & yes & Pre-GFC; COVID period & no & supports regime dependence \\
+\hline
+\end{tabular}
+\end{table}

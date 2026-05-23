@@ -1,0 +1,16 @@
+\begin{table}[H]
+\caption{SQ2 Regression Summary}
+\label{tab:sq2_summary}
+\begin{tabular}{cccccccc}
+\hline
+model_name & volatility_proxy & added_variable & added_significant & adjusted_r_squared_multivariate & adjusted_r_squared_bivariate & adj_r_squared_improves & conclusion \\
+\hline
+dollar_log_return ~ vix_diff + STLFSI4_diff & vix_diff & STLFSI4_diff & yes & 0.168 & 0.050 & yes & added variable contributes \\
+dollar_log_return ~ vix_diff + gepu_diff & vix_diff & gepu_diff & yes & 0.084 & 0.050 & yes & added variable contributes \\
+dollar_log_return ~ vxy_g7_diff + STLFSI4_diff & vxy_g7_diff & STLFSI4_diff & yes & 0.169 & 0.095 & yes & added variable contributes \\
+dollar_log_return ~ vxy_g7_diff + gepu_diff & vxy_g7_diff & gepu_diff & yes & 0.111 & 0.095 & yes & added variable contributes \\
+dollar_log_return ~ vxy_em_diff + STLFSI4_diff & vxy_em_diff & STLFSI4_diff & yes & 0.231 & 0.209 & yes & added variable contributes \\
+dollar_log_return ~ vxy_em_diff + gepu_diff & vxy_em_diff & gepu_diff & no & 0.220 & 0.209 & yes & added variable does not contribute clearly \\
+\hline
+\end{tabular}
+\end{table}

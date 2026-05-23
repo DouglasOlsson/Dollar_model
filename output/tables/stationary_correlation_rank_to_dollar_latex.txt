@@ -1,0 +1,15 @@
+\begin{table}[H]
+\caption{Correlation Ranking with Dollar Log Return}
+\label{tab:corr_rank}
+\begin{tabular}{cc}
+\hline
+variable & abs_corr \\
+\hline
+vxy_em_diff & 0.461 \\
+STLFSI4_diff & 0.415 \\
+vxy_g7_diff & 0.315 \\
+vix_diff & 0.233 \\
+gepu_diff & 0.197 \\
+\hline
+\end{tabular}
+\end{table}

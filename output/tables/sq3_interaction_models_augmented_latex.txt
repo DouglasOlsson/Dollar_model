@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering
+\caption{SQ3 Interaction Models Augmented}
+\label{tab:sq3_interaction_aug}
+\begin{tabular}{cccccccccccc}
+\hline
+model_name & dependent_variable & explanatory_variables & coefficient_main_proxy & p_value_main_proxy & coefficient_crisis_dummy & p_value_crisis_dummy & coefficient_interaction & p_value_interaction & r_squared & adjusted_r_squared & n_obs \\
+\hline
+ΔVIX + ΔSTLFSI4 × GFC & dollar_log_return & vix_diff + STLFSI4_diff + GFC_dummy + vix_diff:GFC_dummy & 0.000 & 0.828 & 0.008 & 0.213 & 0.001 & 0.037 & 0.212 & 0.198 & 239.000 \\
+ΔVIX + ΔGEPU × GFC & dollar_log_return & vix_diff + gepu_diff + GFC_dummy + vix_diff:GFC_dummy & 0.000 & 0.047 & 0.007 & 0.253 & 0.002 & 0.000 & 0.171 & 0.157 & 238.000 \\
+ΔVIX + ΔSTLFSI4 × COVID & dollar_log_return & vix_diff + STLFSI4_diff + COVID_dummy + vix_diff:COVID_dummy & 0.000 & 0.156 & 0.006 & 0.130 & -0.001 & 0.008 & 0.192 & 0.179 & 239.000 \\
+ΔVIX + ΔGEPU × COVID & dollar_log_return & vix_diff + gepu_diff + COVID_dummy + vix_diff:COVID_dummy & 0.001 & 0.012 & 0.003 & 0.513 & -0.000 & 0.184 & 0.096 & 0.081 & 238.000 \\
+ΔVXY_G7 + ΔSTLFSI4 × GFC & dollar_log_return & vxy_g7_diff + STLFSI4_diff + GFC_dummy + vxy_g7_diff:GFC_dummy & 0.001 & 0.476 & 0.008 & 0.291 & 0.000 & 0.889 & 0.192 & 0.178 & 239.000 \\
+ΔVXY_G7 + ΔGEPU × GFC & dollar_log_return & vxy_g7_diff + gepu_diff + GFC_dummy + vxy_g7_diff:GFC_dummy & 0.002 & 0.015 & 0.006 & 0.376 & 0.003 & 0.076 & 0.142 & 0.128 & 238.000 \\
+ΔVXY_G7 + ΔSTLFSI4 × COVID & dollar_log_return & vxy_g7_diff + STLFSI4_diff + COVID_dummy + vxy_g7_diff:COVID_dummy & 0.001 & 0.329 & 0.005 & 0.161 & -0.006 & 0.013 & 0.193 & 0.179 & 239.000 \\
+ΔVXY_G7 + ΔGEPU × COVID & dollar_log_return & vxy_g7_diff + gepu_diff + COVID_dummy + vxy_g7_diff:COVID_dummy & 0.003 & 0.005 & 0.003 & 0.503 & -0.000 & 0.835 & 0.119 & 0.104 & 238.000 \\
+ΔVXY_EM + ΔSTLFSI4 × GFC & dollar_log_return & vxy_em_diff + STLFSI4_diff + GFC_dummy + vxy_em_diff:GFC_dummy & 0.003 & 0.000 & 0.006 & 0.280 & 0.001 & 0.521 & 0.248 & 0.236 & 239.000 \\
+ΔVXY_EM + ΔGEPU × GFC & dollar_log_return & vxy_em_diff + gepu_diff + GFC_dummy + vxy_em_diff:GFC_dummy & 0.003 & 0.000 & 0.005 & 0.340 & 0.002 & 0.039 & 0.245 & 0.232 & 238.000 \\
+ΔVXY_EM + ΔSTLFSI4 × COVID & dollar_log_return & vxy_em_diff + STLFSI4_diff + COVID_dummy + vxy_em_diff:COVID_dummy & 0.003 & 0.000 & 0.003 & 0.536 & -0.002 & 0.512 & 0.239 & 0.225 & 239.000 \\
+ΔVXY_EM + ΔGEPU × COVID & dollar_log_return & vxy_em_diff + gepu_diff + COVID_dummy + vxy_em_diff:COVID_dummy & 0.004 & 0.000 & 0.000 & 0.990 & 0.002 & 0.242 & 0.228 & 0.215 & 238.000 \\
+\hline
+\end{tabular}
+\end{table}

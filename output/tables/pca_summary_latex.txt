@@ -1,0 +1,11 @@
+% PCA Summary
+% label: tab:pca_summary
+\begin{tabular}{llllll}
+\hline
+specification & variables_included & variance_explained_PC1 & variance_explained_PC2 & cumulative_variance_PC1_PC2 & interpretation \\
+\hline
+A & vix_diff, vxy_g7_diff, vxy_em_diff & 0.7643 & 0.1615 & 0.9259 & PC1 appears to capture a common financial uncertainty/stress factor \\
+B & vix_diff, vxy_g7_diff, vxy_em_diff, STLFSI4_diff & 0.7125 & 0.1382 & 0.8506 & PC1 appears to capture a common financial uncertainty/stress factor STLFSI4 loads weakly on PC1. \\
+C & vix_diff, vxy_g7_diff, vxy_em_diff, STLFSI4_diff, gepu_diff & 0.5827 & 0.2018 & 0.7846 & PC1 appears to capture a broad uncertainty/stress factor GEPU loads weakly on PC1. \\
+\hline
+\end{tabular}

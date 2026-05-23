@@ -1,0 +1,40 @@
+% Appendix robustness check only. Main thesis specifications use first differences for consistency with the short-run change-based design. Level specifications are estimated only for regressors found to be stationary in levels, while GEPU remains as gepu_diff.
+
+\begin{table}[H]
+\centering
+\caption{Level-based bivariate robustness regressions}
+\label{tab:level_robustness_bivariate}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{cccccccc}
+\hline
+model_name & independent_variable & coefficient & standard_error & t_statistic & p_value & adjusted_r_squared & n_obs \\
+\hline
+dollar_log_return ~ vix & vix & 0.000 & 0.000 & 2.221 & 0.026 & 0.068 & 239 \\
+dollar_log_return ~ STLFSI4 & STLFSI4 & 0.003 & 0.001 & 2.249 & 0.025 & 0.074 & 239 \\
+dollar_log_return ~ vxy_g7 & vxy_g7 & 0.001 & 0.001 & 1.451 & 0.147 & 0.033 & 239 \\
+dollar_log_return ~ vxy_em & vxy_em & 0.001 & 0.001 & 2.045 & 0.041 & 0.058 & 239 \\
+dollar_log_return ~ gepu_diff & gepu_diff & 0.000 & 0.000 & 2.793 & 0.005 & 0.035 & 238 \\
+\hline
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Level-based augmented robustness regressions}
+\label{tab:level_robustness_augmented}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ccccccccccccc}
+\hline
+model_name & proxy_variable & proxy_coefficient & proxy_standard_error & proxy_t_statistic & proxy_p_value & added_variable & added_variable_coefficient & added_variable_standard_error & added_variable_t_statistic & added_variable_p_value & adjusted_r_squared & n_obs \\
+\hline
+dollar_log_return ~ vix + STLFSI4 & vix & 0.000 & 0.000 & 1.099 & 0.272 & STLFSI4 & 0.002 & 0.002 & 1.135 & 0.256 & 0.077 & 239 \\
+dollar_log_return ~ vix + gepu_diff & vix & 0.000 & 0.000 & 2.154 & 0.031 & gepu_diff & 0.000 & 0.000 & 2.708 & 0.007 & 0.096 & 238 \\
+dollar_log_return ~ vxy_g7 + STLFSI4 & vxy_g7 & -0.000 & 0.001 & -0.421 & 0.674 & STLFSI4 & 0.004 & 0.002 & 2.067 & 0.039 & 0.072 & 239 \\
+dollar_log_return ~ vxy_g7 + gepu_diff & vxy_g7 & 0.001 & 0.001 & 1.390 & 0.164 & gepu_diff & 0.000 & 0.000 & 2.786 & 0.005 & 0.064 & 238 \\
+dollar_log_return ~ vxy_em + STLFSI4 & vxy_em & 0.000 & 0.001 & 0.440 & 0.660 & STLFSI4 & 0.002 & 0.002 & 1.161 & 0.246 & 0.073 & 239 \\
+dollar_log_return ~ vxy_em + gepu_diff & vxy_em & 0.001 & 0.001 & 2.009 & 0.045 & gepu_diff & 0.000 & 0.000 & 2.854 & 0.004 & 0.090 & 238 \\
+\hline
+\end{tabular}%
+}
+\end{table}

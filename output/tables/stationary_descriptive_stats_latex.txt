@@ -1,0 +1,16 @@
+\begin{table}[H]
+\caption{Descriptive Statistics for Stationary Variables}
+\label{tab:desc_stats}
+\begin{tabular}{cccccc}
+\hline
+Index & mean & std & min & max & count \\
+\hline
+dollar_log_return & 0.001 & 0.013 & -0.032 & 0.072 & 239.000 \\
+vix_diff & 0.008 & 5.310 & -19.390 & 21.270 & 239.000 \\
+STLFSI4_diff & 0.002 & 0.574 & -1.899 & 5.345 & 239.000 \\
+vxy_g7_diff & -0.008 & 1.145 & -3.340 & 8.550 & 239.000 \\
+vxy_em_diff & -0.009 & 1.367 & -3.070 & 11.200 & 239.000 \\
+gepu_diff & 1.263 & 40.065 & -143.097 & 154.509 & 238.000 \\
+\hline
+\end{tabular}
+\end{table}

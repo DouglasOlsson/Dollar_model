@@ -1,0 +1,29 @@
+model_name,dependent_variable,independent_variables,breakpoint,n_pre,n_post,chow_statistic,p_value,break_evidence,interpretation
+dollar_log_return ~ vix_diff,dollar_log_return,vix_diff,2008-01-01,23,216,4.314379626700517,0.014450031253727996,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vix_diff,dollar_log_return,vix_diff,2010-01-01,47,192,5.546836362877755,0.004427628800413964,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vix_diff,dollar_log_return,vix_diff,2020-01-01,167,72,3.632369036979752,0.02794953170108207,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vix_diff,dollar_log_return,vix_diff,2022-01-01,191,48,1.1446940292934917,0.320089661032619,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_g7_diff,dollar_log_return,vxy_g7_diff,2008-01-01,23,216,4.638790120185999,0.010571819069119276,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_g7_diff,dollar_log_return,vxy_g7_diff,2010-01-01,47,192,1.5936405335917785,0.20537245882932778,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_g7_diff,dollar_log_return,vxy_g7_diff,2020-01-01,167,72,0.3557578866227889,0.7010189199085883,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_g7_diff,dollar_log_return,vxy_g7_diff,2022-01-01,191,48,0.2598760682372807,0.7713684714727645,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_em_diff,dollar_log_return,vxy_em_diff,2008-01-01,23,216,9.706316135376536,8.905943333177425e-05,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_em_diff,dollar_log_return,vxy_em_diff,2010-01-01,47,192,1.8143407689294317,0.16522030399426474,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_em_diff,dollar_log_return,vxy_em_diff,2020-01-01,167,72,0.2597185303515442,0.7714897326687873,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_em_diff,dollar_log_return,vxy_em_diff,2022-01-01,191,48,0.06884396853081841,0.9334911389299362,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ STLFSI4_diff,dollar_log_return,STLFSI4_diff,2008-01-01,23,216,3.8374184280883568,0.022912164724915106,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ STLFSI4_diff,dollar_log_return,STLFSI4_diff,2010-01-01,47,192,1.4368466277955776,0.23975628020018158,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ STLFSI4_diff,dollar_log_return,STLFSI4_diff,2020-01-01,167,72,0.41387992270579166,0.6615612492669256,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ STLFSI4_diff,dollar_log_return,STLFSI4_diff,2022-01-01,191,48,0.282341708536781,0.754271398806246,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ gepu_diff,dollar_log_return,gepu_diff,2008-01-01,23,215,3.05803510351977,0.04886205858583741,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ gepu_diff,dollar_log_return,gepu_diff,2010-01-01,47,191,2.697697091603048,0.06945568790232082,Weak,Weak evidence of parameter instability
+dollar_log_return ~ gepu_diff,dollar_log_return,gepu_diff,2020-01-01,167,71,0.02549058240785106,0.9748342660056077,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ gepu_diff,dollar_log_return,gepu_diff,2022-01-01,191,47,0.8174002962043413,0.4428349230117695,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vix_diff + STLFSI4_diff,dollar_log_return,"vix_diff, STLFSI4_diff",2008-01-01,23,216,3.363363298101107,0.019446189010433802,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vix_diff + STLFSI4_diff,dollar_log_return,"vix_diff, STLFSI4_diff",2010-01-01,47,192,1.7212962448121951,0.16332850930374596,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vix_diff + STLFSI4_diff,dollar_log_return,"vix_diff, STLFSI4_diff",2020-01-01,167,72,1.407556651293,0.24128203490210098,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vix_diff + STLFSI4_diff,dollar_log_return,"vix_diff, STLFSI4_diff",2022-01-01,191,48,0.3345265226805835,0.8003884087964273,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_em_diff + STLFSI4_diff,dollar_log_return,"vxy_em_diff, STLFSI4_diff",2008-01-01,23,216,6.566273578673779,0.00027991964872110635,Yes,Evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_em_diff + STLFSI4_diff,dollar_log_return,"vxy_em_diff, STLFSI4_diff",2010-01-01,47,192,1.684495561468695,0.17105508633970054,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_em_diff + STLFSI4_diff,dollar_log_return,"vxy_em_diff, STLFSI4_diff",2020-01-01,167,72,0.02920833806558782,0.9932605833710157,No,No evidence of parameter instability at the selected regime boundary
+dollar_log_return ~ vxy_em_diff + STLFSI4_diff,dollar_log_return,"vxy_em_diff, STLFSI4_diff",2022-01-01,191,48,0.31262304831247756,0.8162513722113466,No,No evidence of parameter instability at the selected regime boundary

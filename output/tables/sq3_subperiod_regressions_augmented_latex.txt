@@ -1,0 +1,41 @@
+\begin{table}[H]
+\centering
+\caption{SQ3 Subperiod Regressions Augmented}
+\label{tab:sq3_subperiod_aug}
+\begin{tabular}{cccccccccccc}
+\hline
+subperiod & model_name & dependent_variable & explanatory_variables & coefficient_main_proxy & p_value_main_proxy & added_proxy & coefficient_added_proxy & p_value_added_proxy & r_squared & adjusted_r_squared & n_obs \\
+\hline
+Pre-GFC & VIX + STLFSI4 & dollar_log_return & vix_diff + STLFSI4_diff & -0.001 & 0.098 & STLFSI4_diff & 0.006 & 0.017 & 0.178 & 0.096 & 23.000 \\
+Pre-GFC & VXY-G7 + STLFSI4 & dollar_log_return & vxy_g7_diff + STLFSI4_diff & -0.006 & 0.035 & STLFSI4_diff & 0.013 & 0.003 & 0.223 & 0.145 & 23.000 \\
+Pre-GFC & VXY-EM + STLFSI4 & dollar_log_return & vxy_em_diff + STLFSI4_diff & -0.007 & 0.000 & STLFSI4_diff & 0.010 & 0.000 & 0.398 & 0.338 & 23.000 \\
+Pre-GFC & VIX + GEPU & dollar_log_return & vix_diff + gepu_diff & -0.001 & 0.399 & gepu_diff & 0.000 & 0.006 & 0.235 & 0.159 & 23.000 \\
+Pre-GFC & VXY-G7 + GEPU & dollar_log_return & vxy_g7_diff + gepu_diff & -0.004 & 0.129 & gepu_diff & 0.000 & 0.000 & 0.300 & 0.230 & 23.000 \\
+Pre-GFC & VXY-EM + GEPU & dollar_log_return & vxy_em_diff + gepu_diff & -0.006 & 0.000 & gepu_diff & 0.000 & 0.001 & 0.417 & 0.358 & 23.000 \\
+GFC & VIX + STLFSI4 & dollar_log_return & vix_diff + STLFSI4_diff & 0.001 & 0.007 & STLFSI4_diff & 0.005 & 0.045 & 0.447 & 0.394 & 24.000 \\
+GFC & VXY-G7 + STLFSI4 & dollar_log_return & vxy_g7_diff + STLFSI4_diff & -0.001 & 0.759 & STLFSI4_diff & 0.011 & 0.001 & 0.367 & 0.307 & 24.000 \\
+GFC & VXY-EM + STLFSI4 & dollar_log_return & vxy_em_diff + STLFSI4_diff & 0.005 & 0.122 & STLFSI4_diff & 0.001 & 0.889 & 0.447 & 0.395 & 24.000 \\
+GFC & VIX + GEPU & dollar_log_return & vix_diff + gepu_diff & 0.002 & 0.000 & gepu_diff & -0.000 & 0.202 & 0.423 & 0.368 & 24.000 \\
+GFC & VXY-G7 + GEPU & dollar_log_return & vxy_g7_diff + gepu_diff & 0.006 & 0.043 & gepu_diff & -0.000 & 0.427 & 0.274 & 0.205 & 24.000 \\
+GFC & VXY-EM + GEPU & dollar_log_return & vxy_em_diff + gepu_diff & 0.006 & 0.000 & gepu_diff & -0.000 & 0.407 & 0.456 & 0.404 & 24.000 \\
+Post-GFC / pre-COVID & VIX + STLFSI4 & dollar_log_return & vix_diff + STLFSI4_diff & 0.000 & 0.408 & STLFSI4_diff & 0.018 & 0.001 & 0.152 & 0.137 & 120.000 \\
+Post-GFC / pre-COVID & VXY-G7 + STLFSI4 & dollar_log_return & vxy_g7_diff + STLFSI4_diff & 0.002 & 0.063 & STLFSI4_diff & 0.015 & 0.008 & 0.178 & 0.164 & 120.000 \\
+Post-GFC / pre-COVID & VXY-EM + STLFSI4 & dollar_log_return & vxy_em_diff + STLFSI4_diff & 0.003 & 0.000 & STLFSI4_diff & 0.011 & 0.035 & 0.256 & 0.243 & 120.000 \\
+Post-GFC / pre-COVID & VIX + GEPU & dollar_log_return & vix_diff + gepu_diff & 0.001 & 0.001 & gepu_diff & 0.000 & 0.061 & 0.071 & 0.055 & 120.000 \\
+Post-GFC / pre-COVID & VXY-G7 + GEPU & dollar_log_return & vxy_g7_diff + gepu_diff & 0.004 & 0.000 & gepu_diff & 0.000 & 0.202 & 0.112 & 0.097 & 120.000 \\
+Post-GFC / pre-COVID & VXY-EM + GEPU & dollar_log_return & vxy_em_diff + gepu_diff & 0.004 & 0.000 & gepu_diff & 0.000 & 0.244 & 0.223 & 0.209 & 120.000 \\
+COVID period & VIX + STLFSI4 & dollar_log_return & vix_diff + STLFSI4_diff & -0.000 & 0.394 & STLFSI4_diff & 0.008 & 0.000 & 0.295 & 0.227 & 24.000 \\
+COVID period & VXY-G7 + STLFSI4 & dollar_log_return & vxy_g7_diff + STLFSI4_diff & -0.004 & 0.257 & STLFSI4_diff & 0.010 & 0.000 & 0.321 & 0.256 & 24.000 \\
+COVID period & VXY-EM + STLFSI4 & dollar_log_return & vxy_em_diff + STLFSI4_diff & 0.003 & 0.010 & STLFSI4_diff & 0.004 & 0.013 & 0.311 & 0.245 & 24.000 \\
+COVID period & VIX + GEPU & dollar_log_return & vix_diff + gepu_diff & 0.000 & 0.196 & gepu_diff & 0.000 & 0.002 & 0.316 & 0.251 & 24.000 \\
+COVID period & VXY-G7 + GEPU & dollar_log_return & vxy_g7_diff + gepu_diff & 0.002 & 0.170 & gepu_diff & 0.000 & 0.002 & 0.329 & 0.265 & 24.000 \\
+COVID period & VXY-EM + GEPU & dollar_log_return & vxy_em_diff + gepu_diff & 0.005 & 0.000 & gepu_diff & 0.000 & 0.001 & 0.435 & 0.381 & 24.000 \\
+Post-COVID / geopolitical & VIX + STLFSI4 & dollar_log_return & vix_diff + STLFSI4_diff & -0.000 & 0.815 & STLFSI4_diff & 0.015 & 0.023 & 0.092 & 0.052 & 48.000 \\
+Post-COVID / geopolitical & VXY-G7 + STLFSI4 & dollar_log_return & vxy_g7_diff + STLFSI4_diff & 0.001 & 0.449 & STLFSI4_diff & 0.014 & 0.037 & 0.098 & 0.057 & 48.000 \\
+Post-COVID / geopolitical & VXY-EM + STLFSI4 & dollar_log_return & vxy_em_diff + STLFSI4_diff & 0.004 & 0.107 & STLFSI4_diff & 0.010 & 0.113 & 0.132 & 0.093 & 48.000 \\
+Post-COVID / geopolitical & VIX + GEPU & dollar_log_return & vix_diff + gepu_diff & 0.000 & 0.961 & gepu_diff & 0.000 & 0.313 & 0.025 & -0.019 & 47.000 \\
+Post-COVID / geopolitical & VXY-G7 + GEPU & dollar_log_return & vxy_g7_diff + gepu_diff & 0.002 & 0.307 & gepu_diff & 0.000 & 0.371 & 0.039 & -0.005 & 47.000 \\
+Post-COVID / geopolitical & VXY-EM + GEPU & dollar_log_return & vxy_em_diff + gepu_diff & 0.005 & 0.048 & gepu_diff & 0.000 & 0.587 & 0.113 & 0.072 & 47.000 \\
+\hline
+\end{tabular}
+\end{table}

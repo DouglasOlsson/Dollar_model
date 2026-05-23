@@ -1,0 +1,11 @@
+% PCA Regression Results
+% label: tab:pca_reg
+\begin{tabular}{llllllll}
+\hline
+model_name & coefficient & standard_error & t_statistic & p_value & r_squared & adjusted_r_squared & n_obs \\
+\hline
+dollar_log_return ~ PC1_A & 0.0034 & 0.0007 & 4.5646 & 0.0000 & 0.1500 & 0.1464 & 239.0000 \\
+dollar_log_return ~ PC1_B & 0.0033 & 0.0005 & 6.5227 & 0.0000 & 0.1799 & 0.1764 & 239.0000 \\
+dollar_log_return ~ PC1_C & 0.0034 & 0.0005 & 7.0617 & 0.0000 & 0.1890 & 0.1856 & 238.0000 \\
+\hline
+\end{tabular}

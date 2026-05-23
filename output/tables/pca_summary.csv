@@ -1,0 +1,4 @@
+specification,variables_included,variance_explained_PC1,variance_explained_PC2,cumulative_variance_PC1_PC2,interpretation
+A,"vix_diff, vxy_g7_diff, vxy_em_diff",0.7643390093910986,0.1615448172825259,0.9258838266736245,PC1 appears to capture a common financial uncertainty/stress factor
+B,"vix_diff, vxy_g7_diff, vxy_em_diff, STLFSI4_diff",0.7124548204086653,0.13816786030608794,0.8506226807147532,PC1 appears to capture a common financial uncertainty/stress factor STLFSI4 loads weakly on PC1.
+C,"vix_diff, vxy_g7_diff, vxy_em_diff, STLFSI4_diff, gepu_diff",0.5827394839466937,0.20181166039223486,0.7845511443389286,PC1 appears to capture a broad uncertainty/stress factor GEPU loads weakly on PC1.

@@ -1,0 +1,26 @@
+\begin{table}[H]
+\centering
+\caption{SQ3 Subperiod Regressions}
+\label{tab:sq3_subperiod}
+\begin{tabular}{cccccccccccc}
+\hline
+subperiod & model_name & dependent_variable & explanatory_variables & coefficient_main_proxy & p_value_main_proxy & added_proxy & coefficient_added_proxy & p_value_added_proxy & r_squared & adjusted_r_squared & n_obs \\
+\hline
+Pre-GFC & VIX & dollar_log_return & vix_diff & -0.001 & 0.091 & None & nan & nan & 0.128 & 0.086 & 23.000 \\
+Pre-GFC & VXY-G7 & dollar_log_return & vxy_g7_diff & -0.003 & 0.320 & None & nan & nan & 0.062 & 0.018 & 23.000 \\
+Pre-GFC & VXY-EM & dollar_log_return & vxy_em_diff & -0.006 & 0.000 & None & nan & nan & 0.279 & 0.244 & 23.000 \\
+GFC & VIX & dollar_log_return & vix_diff & 0.002 & 0.000 & None & nan & nan & 0.393 & 0.366 & 24.000 \\
+GFC & VXY-G7 & dollar_log_return & vxy_g7_diff & 0.005 & 0.006 & None & nan & nan & 0.256 & 0.222 & 24.000 \\
+GFC & VXY-EM & dollar_log_return & vxy_em_diff & 0.005 & 0.000 & None & nan & nan & 0.447 & 0.421 & 24.000 \\
+Post-GFC / pre-COVID & VIX & dollar_log_return & vix_diff & 0.001 & 0.001 & None & nan & nan & 0.055 & 0.047 & 120.000 \\
+Post-GFC / pre-COVID & VXY-G7 & dollar_log_return & vxy_g7_diff & 0.004 & 0.000 & None & nan & nan & 0.106 & 0.098 & 120.000 \\
+Post-GFC / pre-COVID & VXY-EM & dollar_log_return & vxy_em_diff & 0.004 & 0.000 & None & nan & nan & 0.218 & 0.211 & 120.000 \\
+COVID period & VIX & dollar_log_return & vix_diff & 0.000 & 0.363 & None & nan & nan & 0.017 & -0.028 & 24.000 \\
+COVID period & VXY-G7 & dollar_log_return & vxy_g7_diff & 0.003 & 0.207 & None & nan & nan & 0.064 & 0.021 & 24.000 \\
+COVID period & VXY-EM & dollar_log_return & vxy_em_diff & 0.006 & 0.000 & None & nan & nan & 0.279 & 0.246 & 24.000 \\
+Post-COVID / geopolitical & VIX & dollar_log_return & vix_diff & -0.000 & 0.966 & None & nan & nan & 0.000 & -0.022 & 48.000 \\
+Post-COVID / geopolitical & VXY-G7 & dollar_log_return & vxy_g7_diff & 0.002 & 0.225 & None & nan & nan & 0.021 & -0.001 & 48.000 \\
+Post-COVID / geopolitical & VXY-EM & dollar_log_return & vxy_em_diff & 0.005 & 0.043 & None & nan & nan & 0.094 & 0.075 & 48.000 \\
+\hline
+\end{tabular}
+\end{table}
