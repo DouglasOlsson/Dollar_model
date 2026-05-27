@@ -4,14 +4,14 @@ This repository contains the Python code used for the empirical analysis in a ba
 
 The project investigates whether changes in global financial uncertainty proxies are associated with monthly U.S. dollar appreciation over the period 2006–2025. The dependent variable is the monthly log return of the Nominal Broad U.S. Dollar Index (DTWEXBGS). The explanatory variables represent market-implied volatility, financial stress, and policy uncertainty.
 
-## Project structure
+## Project Structure
 
 ```text
 model_dollar/
 ├── data/
-│   ├── raw/              # Original input data
-│   ├── interim/          # Cleaned intermediate datasets
-│   └── processed/        # Final datasets used for analysis
+│   ├── raw/              # Original input data, not included in the public repository
+│   ├── interim/          # Cleaned intermediate datasets, not included in the public repository
+│   └── processed/        # Final datasets used for analysis, not included in the public repository
 ├── figures/              # Generated figures
 ├── output/
 │   └── tables/           # Regression tables and statistical outputs
@@ -21,16 +21,24 @@ model_dollar/
 └── README.md
 ```
 
-## Data
+## Data Availability
 
-The analysis uses monthly data from several sources:
+The repository does **not** include raw, interim, or processed data files.
 
-- **DTWEXBGS:** Nominal Broad U.S. Dollar Index
-- **VIX:** equity-market implied volatility
-- **VXY-G7:** G7 foreign-exchange implied volatility
-- **VXY-EM:** emerging-market foreign-exchange implied volatility
-- **STLFSI4:** St. Louis Fed Financial Stress Index
-- **GEPU:** Global Economic Policy Uncertainty Index
+This is intentional. Some of the data used in the thesis may be subject to access restrictions or licensing terms. In particular, the foreign-exchange implied volatility series **VXY-G7** and **VXY-EM** were obtained through LSEG Workspace and are therefore not redistributed in this repository.
+
+Users who want to reproduce the full analysis must obtain the required data separately from the relevant providers and place the files in the appropriate local data folders.
+
+The analysis uses monthly data from the following sources:
+
+| Variable | Description | Source |
+|---|---|---|
+| DTWEXBGS | Nominal Broad U.S. Dollar Index | FRED |
+| VIX | Equity-market implied volatility | Yahoo Finance / CBOE |
+| VXY-G7 | G7 foreign-exchange implied volatility | LSEG Workspace |
+| VXY-EM | Emerging-market foreign-exchange implied volatility | LSEG Workspace |
+| STLFSI4 | St. Louis Fed Financial Stress Index | FRED |
+| GEPU | Global Economic Policy Uncertainty Index | PolicyUncertainty.com |
 
 The dependent variable is calculated as the monthly log return of the dollar index. The explanatory variables are transformed into first differences to align the empirical specification with short-run changes in financial uncertainty.
 
@@ -47,7 +55,7 @@ The empirical analysis includes:
 - structural break tests
 - principal component analysis as a complementary analysis
 
-## How to run the project
+## How to Run the Project
 
 Create and activate a virtual environment:
 
@@ -62,7 +70,13 @@ Install the required packages:
 pip install pandas numpy statsmodels matplotlib scikit-learn openpyxl
 ```
 
-Run the scripts in the following order:
+Place the required raw data files locally in:
+
+```text
+data/raw/
+```
+
+Then run the scripts in the following order:
 
 ```bash
 python scripts/build_master_monthly.py
@@ -84,7 +98,7 @@ output/tables/
 figures/
 ```
 
-## Main output files
+## Main Output Files
 
 Important output files include:
 
@@ -102,11 +116,23 @@ output/tables/pca_summary.csv
 
 LaTeX versions of selected tables are also generated as `.txt` files.
 
-## Reproducibility notes
+## Reproducibility Notes
 
-The code is structured so that the main empirical results can be reproduced from the raw data files by running the scripts in sequence. Intermediate and processed datasets are included to make the workflow transparent.
+The code is structured so that the main empirical workflow can be reproduced from the required input data by running the scripts in sequence.
 
-Some data sources may be subject to access restrictions or licensing terms. In particular, foreign-exchange implied volatility series such as VXY-G7 and VXY-EM may require access through financial data providers.
+Because access-restricted data are not included, the public repository should be understood as a reproducible code repository rather than a complete open-data archive. Users with access to the same data sources can reproduce the full analysis by placing the required files in the expected local folders.
+
+The repository excludes:
+
+```text
+data/raw/
+data/interim/
+data/processed/
+*.xlsx
+*.csv
+```
+
+These exclusions are defined in `.gitignore` to avoid redistributing raw or processed data files, including licensed financial data.
 
 ## Author
 
