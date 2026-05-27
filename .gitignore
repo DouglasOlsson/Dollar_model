@@ -16,3 +16,8 @@ env/
 
 # IDE/editor
 .idea/
+data/raw/
+data/interim/
+data/processed/
+*.xlsx
+*.csv
